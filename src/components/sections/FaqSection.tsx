@@ -3,15 +3,15 @@ import type { FaqSectionProps } from "@/types"
 
 export function FaqSection({ title = "Frequently Asked Questions", subtitle, items }: FaqSectionProps) {
   return (
-    <section className="py-16 bg-white dark:bg-gray-950">
+    <section className="py-16 bg-gray-950">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               {title}
             </h2>
             {subtitle && (
-              <p className="text-xl text-gray-600 dark:text-gray-300">
+              <p className="text-xl text-gray-300">
                 {subtitle}
               </p>
             )}
@@ -23,7 +23,7 @@ export function FaqSection({ title = "Frequently Asked Questions", subtitle, ite
                 <AccordionTrigger className="text-left text-lg font-medium">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                <AccordionContent className="text-gray-300 leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

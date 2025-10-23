@@ -5,14 +5,14 @@ import { Check, X } from "lucide-react"
 
 export function PricingSection({ title = "Choose Your Plan", subtitle, tiers }: PricingSectionProps) {
   return (
-    <section className="py-16 bg-white dark:bg-gray-950">
+    <section className="py-16 bg-gray-950">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             {title}
           </h2>
           {subtitle && (
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               {subtitle}
             </p>
           )}
@@ -36,7 +36,7 @@ export function PricingSection({ title = "Choose Your Plan", subtitle, tiers }: 
                 <CardTitle className="text-2xl">{tier.name}</CardTitle>
                 <div className="mt-4">
                   <span className="text-4xl font-bold">{tier.price}</span>
-                  <span className="text-gray-600 dark:text-gray-400 ml-1">/{tier.period}</span>
+                  <span className="text-gray-400 ml-1">/{tier.period}</span>
                 </div>
                 <CardDescription className="mt-4">
                   {tier.description}
@@ -54,7 +54,7 @@ export function PricingSection({ title = "Choose Your Plan", subtitle, tiers }: 
                           <Check className="w-5 h-5 text-green-500" />
                         )}
                       </div>
-                      <span className="text-gray-700 dark:text-gray-300">
+                      <span className="text-gray-300">
                         {feature.replace('❌ ', '').replace('✅ ', '')}
                       </span>
                     </li>

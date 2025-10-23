@@ -13,7 +13,7 @@ export function ImageLeftTextRightSection({
   features,
 }: ImageTextSectionProps) {
   return (
-    <section className="py-16 bg-white dark:bg-gray-950">
+    <section className="py-16 bg-gray-950">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
@@ -36,11 +36,11 @@ export function ImageLeftTextRightSection({
               </p>
             )}
             
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
               {title}
             </h2>
             
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed">
               {description}
             </p>
             
@@ -52,10 +52,10 @@ export function ImageLeftTextRightSection({
                       <Check className="w-4 h-4 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 dark:text-white">
+                      <h3 className="font-semibold text-white">
                         {feature.title}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300">
+                      <p className="text-gray-300">
                         {feature.description}
                       </p>
                     </div>
@@ -80,7 +80,7 @@ export function ImageLeftTextRightSection({
 
 export function ImageRightTextLeftSection(props: ImageTextSectionProps) {
   return (
-    <section className="py-16 bg-gray-50 dark:bg-gray-900">
+    <section className="py-16 bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -91,11 +91,11 @@ export function ImageRightTextLeftSection(props: ImageTextSectionProps) {
               </p>
             )}
             
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
               {props.title}
             </h2>
             
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed">
               {props.description}
             </p>
             
@@ -107,10 +107,10 @@ export function ImageRightTextLeftSection(props: ImageTextSectionProps) {
                       <Check className="w-4 h-4 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 dark:text-white">
+                      <h3 className="font-semibold text-white">
                         {feature.title}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300">
+                      <p className="text-gray-300">
                         {feature.description}
                       </p>
                     </div>

@@ -12,16 +12,16 @@ const iconMap = {
 
 export function ThreeCardsSection({ title, subtitle, cards }: ThreeCardsSectionProps) {
   return (
-    <section className="py-16 bg-white dark:bg-gray-950">
+    <section className="py-16 bg-gray-950">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           {title && (
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               {title}
             </h2>
           )}
           {subtitle && (
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               {subtitle}
             </p>
           )}

@@ -3,10 +3,10 @@ import type { TrustLogosSectionProps } from "@/types"
 
 export function TrustLogosSection({ title = "Trusted by leading companies", logos }: TrustLogosSectionProps) {
   return (
-    <section className="py-16 bg-gray-50 dark:bg-gray-900">
+    <section className="py-16 bg-gray-900">
       <div className="container mx-auto px-4">
         {title && (
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-white">
             {title}
           </h2>
         )}

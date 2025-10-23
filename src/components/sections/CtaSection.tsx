@@ -44,12 +44,12 @@ export function CtaSection({
           )}
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
+            <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100 text-black">
               <a href={primaryCtaHref}>{primaryCtaText}</a>
             </Button>
             
             {secondaryCtaText && secondaryCtaHref && (
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary hover:text-black">
+              <Button asChild size="lg" variant="outline" className="border-white text-black hover:bg-white hover:text-primary hover:text-black">
                 <a href={secondaryCtaHref}>{secondaryCtaText}</a>
               </Button>
             )}

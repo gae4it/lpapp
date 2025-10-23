@@ -5,14 +5,14 @@ import { Star } from "lucide-react"
 
 export function TestimonialsSection({ title = "What our customers say", subtitle, testimonials }: TestimonialsSectionProps) {
   return (
-    <section className="py-16 bg-gray-50 dark:bg-gray-900">
+    <section className="py-16 bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             {title}
           </h2>
           {subtitle && (
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               {subtitle}
             </p>
           )}
@@ -27,7 +27,7 @@ export function TestimonialsSection({ title = "What our customers say", subtitle
                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <blockquote className="text-gray-700 dark:text-gray-300 italic">
+                <blockquote className="text-gray-300 italic">
                   &ldquo;{testimonial.content}&rdquo;
                 </blockquote>
               </CardHeader>
@@ -43,10 +43,10 @@ export function TestimonialsSection({ title = "What our customers say", subtitle
                     />
                   )}
                   <div>
-                    <div className="font-semibold text-gray-900 dark:text-white">
+                    <div className="font-semibold text-white">
                       {testimonial.name}
                     </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                    <div className="text-sm text-gray-400">
                       {testimonial.role} at {testimonial.company}
                     </div>
                   </div>
