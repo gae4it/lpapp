@@ -4,7 +4,7 @@ export const headerData: HeaderProps = {
   logo: {
     src: "/logo.svg",
     alt: "CloudFlow",
-    href: "/examples/saas"
+    href: "/templates/saas"
   },
   navigation: [
     { title: "Features", href: "#features" },

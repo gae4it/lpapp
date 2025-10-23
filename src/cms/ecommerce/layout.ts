@@ -4,7 +4,7 @@ export const headerData: HeaderProps = {
   logo: {
     src: "/logo.svg",
     alt: "StyleCraft",
-    href: "/examples/ecommerce"
+    href: "/templates/ecommerce"
   },
   navigation: [
     { title: "Shop", href: "#shop" },

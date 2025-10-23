@@ -17,6 +17,10 @@ import { servicesData } from "@/cms/agency/services";
 import { portfolioData } from "@/cms/agency/portfolio";
 import { pricingData } from "@/cms/agency/pricing";
 import { ctaData } from "@/cms/agency/cta";
+import { seo } from "@/cms/agency/seo";
+import { generateSeoMetadata } from "@/lib/seo";
+
+export const metadata = generateSeoMetadata(seo);
 
 export default function AgencyLanding() {
   return (

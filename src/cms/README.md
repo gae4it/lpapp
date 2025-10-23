@@ -131,6 +131,35 @@ export default function StartupLanding() {
 | `testimonials.ts` | TestimonialsSection | Recensioni clienti |
 | `trustLogos.ts` | TrustLogosSection | Loghi partner/clienti |
 | `layout.ts` | Header & Footer | Navigazione e footer |
+| `seo.ts` | Metadata SEO | Title, description, OG, Twitter Card |
+
+## 🔍 SEO Metadata
+
+Ogni pagina ha un file `seo.ts` che contiene:
+
+```typescript
+export const seo: SeoProps = {
+  title: "Titolo della pagina",
+  description: "Descrizione per i motori di ricerca",
+  keywords: ["parola1", "parola2"],
+  canonical: "https://tuodominio.com/path",
+  og: {
+    title: "Titolo Open Graph",
+    description: "Descrizione per social",
+    image: "URL immagine preview",
+    url: "URL canonico"
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@username",
+    title: "Titolo Twitter",
+    description: "Descrizione Twitter",
+    image: "URL immagine Twitter"
+  }
+}
+```
+
+I metadata vengono automaticamente convertiti in tag HTML corretti da Next.js.
 
 ## 🚀 Uso nelle Pagine
 

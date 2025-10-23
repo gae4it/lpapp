@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import Image from "next/image"
 import type { TestimonialsSectionProps } from "@/types"
 import { Star } from "lucide-react"
 
@@ -33,9 +34,11 @@ export function TestimonialsSection({ title = "What our customers say", subtitle
               <CardContent className="pt-0">
                 <div className="flex items-center space-x-3">
                   {testimonial.avatar && (
-                    <img
+                    <Image
                       src={testimonial.avatar}
                       alt={testimonial.name}
+                      width={48}
+                      height={48}
                       className="w-12 h-12 rounded-full object-cover"
                     />
                   )}

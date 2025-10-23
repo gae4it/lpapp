@@ -7,21 +7,13 @@ export const headerData: HeaderProps = {
     href: "/"
   },
   navigation: [
-    { 
-      title: "Templates", 
-      href: "/templates",
-      items: [
-        { title: "SaaS Landing", href: "/templates/saas", description: "Modern software product page" },
-        { title: "E-commerce", href: "/templates/ecommerce", description: "Online store landing page" },
-        { title: "Agency", href: "/templates/agency", description: "Creative agency showcase" }
-      ]
-    },
-    { title: "Components", href: "/components" },
+    { title: "Templates", href: "/templates" },
     { title: "Docs", href: "/docs" },
     { title: "Pricing", href: "/pricing" },
+    { title: "GitHub", href: "https://github.com/gae4it/lpapp" },
   ],
   ctaButton: {
-    text: "Start Building",
+    text: "Get Started",
     href: "/signup"
   }
 };

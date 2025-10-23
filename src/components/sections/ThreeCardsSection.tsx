@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image"
 import type { ThreeCardsSectionProps } from "@/types"
 import { Lightbulb, Shield, Zap } from "lucide-react"
 
@@ -40,9 +41,11 @@ export function ThreeCardsSection({ title, subtitle, cards }: ThreeCardsSectionP
                   )}
                   {card.image && (
                     <div className="mx-auto mb-4 w-16 h-16 rounded-lg overflow-hidden">
-                      <img
+                      <Image
                         src={card.image}
                         alt={card.title}
+                        width={64}
+                        height={64}
                         className="w-full h-full object-cover"
                       />
                     </div>

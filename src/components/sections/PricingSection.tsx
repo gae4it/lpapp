@@ -47,7 +47,7 @@ export function PricingSection({ title = "Choose Your Plan", subtitle, tiers }: 
                 <ul className="space-y-3">
                   {tier.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center space-x-3">
-                      <div className="flex-shrink-0">
+                      <div className="shrink-0">
                         {feature.startsWith('❌') || feature.includes('Not included') ? (
                           <X className="w-5 h-5 text-gray-400" />
                         ) : (

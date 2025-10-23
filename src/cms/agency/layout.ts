@@ -4,7 +4,7 @@ export const headerData: HeaderProps = {
   logo: {
     src: "/logo.svg",
     alt: "Nexus Creative Agency",
-    href: "/examples/agency"
+    href: "/templates/agency"
   },
   navigation: [
     { title: "Services", href: "#services" },

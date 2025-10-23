@@ -18,7 +18,7 @@ export function ImageLeftTextRightSection({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="relative">
-            <div className="aspect-[4/3] relative rounded-lg overflow-hidden shadow-xl">
+            <div className="aspect-4/3 relative rounded-lg overflow-hidden shadow-xl">
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -48,7 +48,7 @@ export function ImageLeftTextRightSection({
               <div className="space-y-4">
                 {features.map((feature) => (
                   <div key={feature.title} className="flex items-start space-x-3">
-                    <div className="flex-shrink-0 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center mt-0.5">
+                    <div className="shrink-0 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center mt-0.5">
                       <Check className="w-4 h-4 text-primary" />
                     </div>
                     <div>
@@ -103,7 +103,7 @@ export function ImageRightTextLeftSection(props: ImageTextSectionProps) {
               <div className="space-y-4">
                 {props.features.map((feature) => (
                   <div key={feature.title} className="flex items-start space-x-3">
-                    <div className="flex-shrink-0 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center mt-0.5">
+                    <div className="shrink-0 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center mt-0.5">
                       <Check className="w-4 h-4 text-primary" />
                     </div>
                     <div>
@@ -130,7 +130,7 @@ export function ImageRightTextLeftSection(props: ImageTextSectionProps) {
           
           {/* Image */}
           <div className="relative order-1 lg:order-2">
-            <div className="aspect-[4/3] relative rounded-lg overflow-hidden shadow-xl">
+            <div className="aspect-4/3 relative rounded-lg overflow-hidden shadow-xl">
               <Image
                 src={props.image.src}
                 alt={props.image.alt}

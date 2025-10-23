@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import type { HeaderProps } from "@/types"
 import { Menu } from "lucide-react"
@@ -9,16 +10,19 @@ export function Header({ logo, navigation, ctaButton }: HeaderProps) {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href={logo.href ?? "/"} className="flex items-center space-x-2">
-            <img
+          <Link href={logo.href ?? "/"} className="flex items-center space-x-2" aria-label="Homepage">
+            <Image
               src={logo.src}
               alt={logo.alt}
+              width={120}
+              height={32}
               className="h-8 w-auto"
+              priority
             />
           </Link>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8" aria-label="Main navigation">
             {navigation.map((item, index) => (
               <div key={index} className="relative group">
                 <Link
@@ -60,7 +64,7 @@ export function Header({ logo, navigation, ctaButton }: HeaderProps) {
             )}
             
             {/* Mobile Menu Button */}
-            <button className="md:hidden p-2">
+            <button className="md:hidden p-2" aria-label="Open mobile menu" aria-expanded="false">
               <Menu className="w-6 h-6" />
             </button>
           </div>

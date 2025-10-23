@@ -17,6 +17,10 @@ import { featuresData } from "@/cms/ecommerce/features";
 import { storyData } from "@/cms/ecommerce/story";
 import { faqData } from "@/cms/ecommerce/faq";
 import { ctaData } from "@/cms/ecommerce/cta";
+import { seo } from "@/cms/ecommerce/seo";
+import { generateSeoMetadata } from "@/lib/seo";
+
+export const metadata = generateSeoMetadata(seo);
 
 export default function EcommerceLanding() {
   return (

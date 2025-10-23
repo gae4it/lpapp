@@ -17,6 +17,10 @@ import { trustLogosData } from "@/cms/saas/trustLogos";
 import { featuresData } from "@/cms/saas/features";
 import { faqData } from "@/cms/saas/faq";
 import { ctaData } from "@/cms/saas/cta";
+import { seo } from "@/cms/saas/seo";
+import { generateSeoMetadata } from "@/lib/seo";
+
+export const metadata = generateSeoMetadata(seo);
 
 export default function SaaSLanding() {
   return (

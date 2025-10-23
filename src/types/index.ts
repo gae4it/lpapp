@@ -155,6 +155,9 @@ export interface LinkData {
   external?: boolean
 }
 
+// SEO types
+export type { SeoProps } from "./seo";
+
 // CMS types
 export interface PageSection {
   type: string

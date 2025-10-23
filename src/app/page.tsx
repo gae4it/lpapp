@@ -7,27 +7,17 @@ import {
 } from "@/components/sections";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { headerData, footerData } from "@/cms/defaults/layout";
+import { headerData, footerData } from "@/cms/home/layout";
+import { heroData } from "@/cms/home/hero";
+import { trustLogosData } from "@/cms/home/trustLogos";
+import { seo } from "@/cms/home/seo";
+import { generateSeoMetadata } from "@/lib/seo";
+import { OrganizationStructuredData } from "@/components/seo/StructuredData";
+import { SkipToContent } from "@/components/accessibility";
+
+export const metadata = generateSeoMetadata(seo);
 
 // Mock data for demonstration
-const heroData = {
-  title: "Build Amazing Landing Pages",
-  subtitle: "Create stunning, high-converting landing pages with our powerful builder. No coding required.",
-  ctaText: "Start Building Free",
-  ctaHref: "/signup",
-  backgroundImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
-};
-
-const trustLogosData = {
-  logos: [
-    { name: "Microsoft", src: "/logos/microsoft.png", alt: "Microsoft" },
-    { name: "Google", src: "/logos/google.png", alt: "Google" },
-    { name: "Apple", src: "/logos/apple.png", alt: "Apple" },
-    { name: "Amazon", src: "/logos/amazon.png", alt: "Amazon" },
-    { name: "Meta", src: "/logos/meta.png", alt: "Meta" },
-  ]
-};
-
 const cardsData = {
   title: "Why Choose LpApp?",
   subtitle: "Everything you need to create professional landing pages",
@@ -139,8 +129,19 @@ const sectionsLibrary = [
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <SkipToContent />
+      <OrganizationStructuredData
+        name="LpApp"
+        description="Professional landing page builder with ready-to-use sections"
+        url={process.env.NEXT_PUBLIC_SITE_URL ?? "https://lpapp.example.com"}
+        logo={`${process.env.NEXT_PUBLIC_SITE_URL ?? "https://lpapp.example.com"}/logo.png`}
+        sameAs={[
+          "https://twitter.com/lpapp",
+          "https://linkedin.com/company/lpapp"
+        ]}
+      />
       <Header {...headerData} />
-      <main>
+      <main id="main-content">
         {/* Page Header */}
         <section className="py-16 bg-white dark:bg-gray-950">
           <div className="container mx-auto py-30 px-4 text-center">
@@ -217,13 +218,13 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/examples/saas"
+                href="/templates/saas"
                 className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 View SaaS Example
               </a>
               <a
-                href="/examples/ecommerce"
+                href="/templates/ecommerce"
                 className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors"
               >
                 View E-commerce Example
