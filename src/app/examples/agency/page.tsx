@@ -9,7 +9,7 @@ import {
 } from "@/components/sections";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { defaultHeaderData, defaultFooterData } from "@/mocks/layout";
+import { defaultHeaderData, defaultFooterData } from "@/cms/layout";
 
 const heroData = {
   title: "We Create Digital Experiences That Matter",
