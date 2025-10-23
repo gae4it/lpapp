@@ -16,6 +16,8 @@ A modern landing page builder built with the [T3 Stack](https://create.t3.gg/) a
 
 ## 🚀 Quick Start
 
+👉 **[See GETTING_STARTED.md for full instructions](./GETTING_STARTED.md)**
+
 1. **Install dependencies**:
    ```bash
    npm install
@@ -57,9 +59,15 @@ See [src/cms/README.md](./src/cms/README.md) for full documentation.
 
 ## 📚 Documentation
 
-- **[CMS Guide](./src/cms/README.md)** - How to manage content
+- **[🚀 GETTING STARTED](./GETTING_STARTED.md)** - Start here!
+- **[📝 CMS Guide](./src/cms/README.md)** - How to manage content
+- **[🚢 Deployment Guide](./docs/DEPLOYMENT.md)** - Deploy to Vercel
+- **[📊 Project Summary](./docs/PROJECT_SUMMARY.md)** - Complete overview
 - **[Component Library](http://localhost:3000)** - View all available sections
 - **[Example Pages](http://localhost:3000/examples/saas)** - See pre-built landing pages
+- **[Storybook](http://localhost:6006)** - Interactive component documentation (run `npm run storybook`)
+- **[Deployment Guide](./docs/DEPLOYMENT.md)** - Deploy to Vercel
+- **[Project Complete](./PROJECT_COMPLETE.md)** - Full project overview
 
 ## 🎨 Tech Stack
 
