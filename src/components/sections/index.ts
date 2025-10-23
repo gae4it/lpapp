@@ -1,0 +1,5 @@
+export { HeroSection } from './HeroSection'
+export { TrustLogosSection } from './TrustLogosSection'
+export { ThreeCardsSection } from './ThreeCardsSection'
+export { ImageLeftTextRightSection, ImageRightTextLeftSection } from './ImageTextSection'
+export { FaqSection } from './FaqSection'

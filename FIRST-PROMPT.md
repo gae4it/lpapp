@@ -1,6 +1,6 @@
 LPAPP
 
-Perfect 🔥 — here’s your final, production-grade prompt, written in English in Markdown format (.md) so you can copy-paste it directly into v0.dev, Cursor, Claude Code, Bolt.new, or ChatGPT (code mode) to scaffold your project.
+Perfect 🔥 — here’s your final, production-grade prompt, written in English in Markdown format (.md) so you can copy-paste it directly into GitHub Copilot (agent mode) to scaffold your project.
 
 
 ---
@@ -410,5 +410,5 @@ Create
 CHANGES.MD
 README.MD
 COPILOT_INSTRUCTIONS.MD
-INITIAL-PROMPT.MD (CHE CONTIENE SEMPLICEMENTE IL PRIMO PROMPT USATO).
+FIRST-PROMPT.MD
  
