@@ -49,7 +49,7 @@ export function CtaSection({
             </Button>
             
             {secondaryCtaText && secondaryCtaHref && (
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary hover:text-black">
                 <a href={secondaryCtaHref}>{secondaryCtaText}</a>
               </Button>
             )}

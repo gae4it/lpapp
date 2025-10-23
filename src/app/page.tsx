@@ -7,34 +7,9 @@ import {
 } from "@/components/sections";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { defaultHeaderData, defaultFooterData } from "@/mocks/layout";
 
 // Mock data for demonstration
-const headerData = {
-  logo: {
-    src: "/logo.svg",
-    alt: "LpApp Logo",
-    href: "/"
-  },
-  navigation: [
-    { 
-      title: "Examples", 
-      href: "/examples",
-      items: [
-        { title: "SaaS Landing", href: "/examples/saas", description: "Modern software product page" },
-        { title: "E-commerce", href: "/examples/ecommerce", description: "Online store landing page" },
-        { title: "Agency", href: "/examples/agency", description: "Creative agency showcase" }
-      ]
-    },
-    { title: "Components", href: "/components" },
-    { title: "Docs", href: "/docs" },
-    { title: "Pricing", href: "/pricing" },
-  ],
-  ctaButton: {
-    text: "Start Building",
-    href: "/signup"
-  }
-};
-
 const heroData = {
   title: "Build Amazing Landing Pages",
   subtitle: "Create stunning, high-converting landing pages with our powerful builder. No coding required.",
@@ -122,37 +97,6 @@ const faqData = {
   ]
 };
 
-const footerData = {
-  companyName: "LpApp",
-  description: "The easiest way to create high-converting landing pages.",
-  sections: [
-    {
-      title: "Product",
-      links: [
-        { title: "Features", href: "/features" },
-        { title: "Pricing", href: "/pricing" },
-        { title: "Templates", href: "/templates" },
-      ]
-    },
-    {
-      title: "Company",
-      links: [
-        { title: "About", href: "/about" },
-        { title: "Blog", href: "/blog" },
-        { title: "Careers", href: "/careers" },
-      ]
-    },
-    {
-      title: "Support",
-      links: [
-        { title: "Help Center", href: "/help" },
-        { title: "Contact", href: "/contact" },
-        { title: "Status", href: "/status" },
-      ]
-    }
-  ]
-};
-
 // Sections Library - Component Showcase
 const sectionsLibrary = [
   {
@@ -195,7 +139,7 @@ const sectionsLibrary = [
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Header {...headerData} />
+      <Header {...defaultHeaderData} />
       <main>
         {/* Page Header */}
         <section className="py-16 bg-white dark:bg-gray-950">
@@ -288,7 +232,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer {...footerData} />
+      <Footer {...defaultFooterData} />
     </div>
   );
 }

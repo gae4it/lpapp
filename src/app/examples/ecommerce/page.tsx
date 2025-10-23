@@ -9,24 +9,7 @@ import {
 } from "@/components/sections";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-
-const headerData = {
-  logo: {
-    src: "/logo.svg", 
-    alt: "StyleCraft",
-    href: "/examples/ecommerce"
-  },
-  navigation: [
-    { title: "Shop", href: "#shop" },
-    { title: "Collections", href: "#collections" },
-    { title: "About", href: "#about" },
-    { title: "Contact", href: "#contact" },
-  ],
-  ctaButton: {
-    text: "Shop Now",
-    href: "#shop"
-  }
-};
+import { defaultHeaderData, defaultFooterData } from "@/mocks/layout";
 
 const heroData = {
   title: "Handcrafted Style, Delivered",
@@ -157,44 +140,10 @@ const ctaData = {
   backgroundImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
 };
 
-const footerData = {
-  companyName: "StyleCraft",
-  description: "Handcrafted products for the modern lifestyle.",
-  sections: [
-    {
-      title: "Shop",
-      links: [
-        { title: "All Products", href: "#products" },
-        { title: "Home Decor", href: "#home" },
-        { title: "Jewelry", href: "#jewelry" },
-        { title: "Textiles", href: "#textiles" }
-      ]
-    },
-    {
-      title: "Support",
-      links: [
-        { title: "Shipping Info", href: "#shipping" },
-        { title: "Returns", href: "#returns" },
-        { title: "Size Guide", href: "#sizing" },
-        { title: "Care Instructions", href: "#care" }
-      ]
-    },
-    {
-      title: "Company",
-      links: [
-        { title: "Our Story", href: "#story" },
-        { title: "Artisan Partners", href: "#artisans" },
-        { title: "Sustainability", href: "#sustainability" },
-        { title: "Press", href: "#press" }
-      ]
-    }
-  ]
-};
-
 export default function EcommerceLanding() {
   return (
     <div className="min-h-screen">
-      <Header {...headerData} />
+      <Header {...defaultHeaderData} />
       <main>
         <HeroSection {...heroData} />
         <TrustLogosSection {...trustLogosData} />
@@ -204,7 +153,7 @@ export default function EcommerceLanding() {
         <FaqSection {...faqData} />
         <CtaSection {...ctaData} />
       </main>
-      <Footer {...footerData} />
+      <Footer {...defaultFooterData} />
     </div>
   );
 }

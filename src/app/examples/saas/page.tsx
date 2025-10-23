@@ -9,26 +9,9 @@ import {
 } from "@/components/sections";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { defaultHeaderData, defaultFooterData } from "@/mocks/layout";
 
 // SaaS Landing Page Data
-const headerData = {
-  logo: {
-    src: "/logo.svg",
-    alt: "CloudFlow",
-    href: "/examples/saas"
-  },
-  navigation: [
-    { title: "Product", href: "#features" },
-    { title: "Pricing", href: "#pricing" },
-    { title: "Resources", href: "#resources" },
-    { title: "About", href: "#about" },
-  ],
-  ctaButton: {
-    text: "Start Free Trial",
-    href: "#signup"
-  }
-};
-
 const heroData = {
   title: "Scale Your Business with CloudFlow",
   subtitle: "The all-in-one platform that helps teams collaborate, automate workflows, and deliver results faster than ever before.",
@@ -187,44 +170,10 @@ const ctaData = {
   backgroundImage: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
 };
 
-const footerData = {
-  companyName: "CloudFlow",
-  description: "The all-in-one platform for modern teams.",
-  sections: [
-    {
-      title: "Product",
-      links: [
-        { title: "Features", href: "#features" },
-        { title: "Pricing", href: "#pricing" },
-        { title: "Security", href: "#security" },
-        { title: "Integrations", href: "#integrations" }
-      ]
-    },
-    {
-      title: "Resources", 
-      links: [
-        { title: "Documentation", href: "#docs" },
-        { title: "Help Center", href: "#help" },
-        { title: "Blog", href: "#blog" },
-        { title: "Changelog", href: "#changelog" }
-      ]
-    },
-    {
-      title: "Company",
-      links: [
-        { title: "About", href: "#about" },
-        { title: "Careers", href: "#careers" },
-        { title: "Contact", href: "#contact" },
-        { title: "Privacy", href: "#privacy" }
-      ]
-    }
-  ]
-};
-
 export default function SaaSLanding() {
   return (
     <div className="min-h-screen">
-      <Header {...headerData} />
+      <Header {...defaultHeaderData} />
       <main>
         <HeroSection {...heroData} />
         <TrustLogosSection {...trustLogosData} />
@@ -234,7 +183,7 @@ export default function SaaSLanding() {
         <FaqSection {...faqData} />
         <CtaSection {...ctaData} />
       </main>
-      <Footer {...footerData} />
+      <Footer {...defaultFooterData} />
     </div>
   );
 }

@@ -9,24 +9,7 @@ import {
 } from "@/components/sections";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-
-const headerData = {
-  logo: {
-    src: "/logo.svg", 
-    alt: "Nexus Creative",
-    href: "/examples/agency"
-  },
-  navigation: [
-    { title: "Services", href: "#services" },
-    { title: "Portfolio", href: "#portfolio" },
-    { title: "Team", href: "#team" },
-    { title: "Contact", href: "#contact" },
-  ],
-  ctaButton: {
-    text: "Start Project",
-    href: "#contact"
-  }
-};
+import { defaultHeaderData, defaultFooterData } from "@/mocks/layout";
 
 const heroData = {
   title: "We Create Digital Experiences That Matter",
@@ -195,44 +178,10 @@ const ctaData = {
   backgroundImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
 };
 
-const footerData = {
-  companyName: "Nexus Creative",
-  description: "Digital experiences that matter. Strategy, design, and development for modern brands.",
-  sections: [
-    {
-      title: "Services",
-      links: [
-        { title: "Brand Strategy", href: "#branding" },
-        { title: "Web Development", href: "#development" },
-        { title: "Digital Marketing", href: "#marketing" },
-        { title: "Consulting", href: "#consulting" }
-      ]
-    },
-    {
-      title: "Company",
-      links: [
-        { title: "About Us", href: "#about" },
-        { title: "Our Team", href: "#team" },
-        { title: "Careers", href: "#careers" },
-        { title: "Blog", href: "#blog" }
-      ]
-    },
-    {
-      title: "Resources",
-      links: [
-        { title: "Case Studies", href: "#cases" },
-        { title: "Insights", href: "#insights" },
-        { title: "Tools", href: "#tools" },
-        { title: "Contact", href: "#contact" }
-      ]
-    }
-  ]
-};
-
 export default function AgencyLanding() {
   return (
     <div className="min-h-screen">
-      <Header {...headerData} />
+      <Header {...defaultHeaderData} />
       <main>
         <HeroSection {...heroData} />
         <TrustLogosSection {...trustLogosData} />
@@ -242,7 +191,7 @@ export default function AgencyLanding() {
         <PricingSection {...pricingData} />
         <CtaSection {...ctaData} />
       </main>
-      <Footer {...footerData} />
+      <Footer {...defaultFooterData} />
     </div>
   );
 }
