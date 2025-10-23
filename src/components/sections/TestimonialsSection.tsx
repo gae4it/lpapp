@@ -18,8 +18,8 @@ export function TestimonialsSection({ title = "What our customers say", subtitle
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="h-full">
+          {testimonials.map((testimonial) => (
+            <Card key={testimonial.name} className="h-full">
               <CardHeader className="pb-4">
                 <div className="flex items-center space-x-1 mb-4">
                   {Array.from({ length: testimonial.rating ?? 5 }).map((_, i) => (

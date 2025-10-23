@@ -27,11 +27,11 @@ export function ThreeCardsSection({ title, subtitle, cards }: ThreeCardsSectionP
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {cards.map((card, index) => {
+          {cards.map((card) => {
             const IconComponent = card.icon ? iconMap[card.icon as keyof typeof iconMap] : null
             
             return (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
+              <Card key={card.title} className="text-center hover:shadow-lg transition-shadow duration-300">
                 <CardHeader className="pb-4">
                   {IconComponent && (
                     <div className="mx-auto mb-4 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">

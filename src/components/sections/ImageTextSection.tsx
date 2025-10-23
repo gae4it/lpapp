@@ -46,8 +46,8 @@ export function ImageLeftTextRightSection({
             
             {features && features.length > 0 && (
               <div className="space-y-4">
-                {features.map((feature, index) => (
-                  <div key={index} className="flex items-start space-x-3">
+                {features.map((feature) => (
+                  <div key={feature.title} className="flex items-start space-x-3">
                     <div className="flex-shrink-0 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center mt-0.5">
                       <Check className="w-4 h-4 text-primary" />
                     </div>
@@ -101,8 +101,8 @@ export function ImageRightTextLeftSection(props: ImageTextSectionProps) {
             
             {props.features && props.features.length > 0 && (
               <div className="space-y-4">
-                {props.features.map((feature, index) => (
-                  <div key={index} className="flex items-start space-x-3">
+                {props.features.map((feature) => (
+                  <div key={feature.title} className="flex items-start space-x-3">
                     <div className="flex-shrink-0 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center mt-0.5">
                       <Check className="w-4 h-4 text-primary" />
                     </div>

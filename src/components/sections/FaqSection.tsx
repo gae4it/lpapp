@@ -18,8 +18,8 @@ export function FaqSection({ title = "Frequently Asked Questions", subtitle, ite
           </div>
           
           <Accordion type="single" collapsible className="w-full">
-            {items.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
+            {items.map((faq) => (
+              <AccordionItem key={faq.question} value={faq.question}>
                 <AccordionTrigger className="text-left text-lg font-medium">
                   {faq.question}
                 </AccordionTrigger>

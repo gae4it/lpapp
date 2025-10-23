@@ -199,7 +199,7 @@ export default function Home() {
       <main>
         {/* Page Header */}
         <section className="py-16 bg-white dark:bg-gray-950">
-          <div className="container mx-auto px-4 text-center">
+          <div className="container mx-auto py-30 px-4 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
               LpApp Sections Library
             </h1>

@@ -19,9 +19,9 @@ export function PricingSection({ title = "Choose Your Plan", subtitle, tiers }: 
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {tiers.map((tier, index) => (
+          {tiers.map((tier) => (
             <Card 
-              key={index} 
+              key={tier.name} 
               className={`relative h-full ${tier.highlighted ? 'border-primary shadow-lg scale-105' : ''}`}
             >
               {tier.highlighted && (

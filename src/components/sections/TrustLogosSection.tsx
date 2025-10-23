@@ -12,9 +12,9 @@ export function TrustLogosSection({ title = "Trusted by leading companies", logo
         )}
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
-          {logos.map((logo, index) => (
+          {logos.map((logo) => (
             <div
-              key={index}
+              key={logo.name}
               className="flex items-center justify-center p-4 transition-all duration-300 hover:scale-110"
             >
               {logo.href ? (
