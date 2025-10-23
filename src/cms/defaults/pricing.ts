@@ -1,6 +1,6 @@
 import type { PricingSectionProps } from "@/types"
 
-export const pricingMockData: PricingSectionProps = {
+export const pricingData: PricingSectionProps = {
   title: "Simple, transparent pricing",
   subtitle: "Choose the perfect plan for your needs. Upgrade or downgrade at any time.",
   tiers: [

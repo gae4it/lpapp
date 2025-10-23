@@ -1,6 +1,6 @@
 import type { TestimonialsSectionProps } from "@/types"
 
-export const testimonialsMockData: TestimonialsSectionProps = {
+export const testimonialsData: TestimonialsSectionProps = {
   title: "Loved by thousands of users",
   subtitle: "See what our customers have to say about LpApp",
   testimonials: [

@@ -1,6 +1,6 @@
 import type { TrustLogosSectionProps } from "@/types"
 
-export const trustLogosMockData: TrustLogosSectionProps = {
+export const trustLogosData: TrustLogosSectionProps = {
   title: "Trusted by leading companies worldwide",
   logos: [
     {

@@ -1,6 +1,6 @@
 import type { HeaderProps, FooterSectionProps } from "@/types";
 
-export const defaultHeaderData: HeaderProps = {
+export const headerData: HeaderProps = {
   logo: {
     src: "/logo.svg",
     alt: "LpApp Logo",
@@ -26,7 +26,7 @@ export const defaultHeaderData: HeaderProps = {
   }
 };
 
-export const defaultFooterData: FooterSectionProps = {
+export const footerData: FooterSectionProps = {
   companyName: "LpApp",
   description: "Build beautiful landing pages with our modern components library. Fast, flexible, and fully customizable.",
   sections: [

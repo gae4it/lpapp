@@ -7,7 +7,7 @@ import {
 } from "@/components/sections";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { defaultHeaderData, defaultFooterData } from "@/cms/layout";
+import { headerData, footerData } from "@/cms/defaults/layout";
 
 // Mock data for demonstration
 const heroData = {
@@ -139,7 +139,7 @@ const sectionsLibrary = [
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Header {...defaultHeaderData} />
+      <Header {...headerData} />
       <main>
         {/* Page Header */}
         <section className="py-16 bg-white dark:bg-gray-950">
@@ -232,7 +232,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer {...defaultFooterData} />
+      <Footer {...footerData} />
     </div>
   );
 }
